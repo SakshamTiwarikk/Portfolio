@@ -654,3 +654,72 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/* ========== Mobile Styles ========== */
+
+/* Adjust breakpoint as needed: 767px is a common mobile breakpoint */
+@media (max-width: 767px) {
+  /* Banner */
+  .banner {
+    padding: 120px 0 80px 0; /* Reduced padding for mobile */
+    background-position: center; /* Center background for smaller screens */
+  }
+  .banner .tagline {
+    font-size: 16px; /* Slightly smaller tagline */
+  }
+  .banner h1 {
+    font-size: 32px; /* Smaller heading on mobile */
+    line-height: 1.2;
+  }
+  .banner p {
+    width: 100%;   /* Let paragraph span full width on mobile */
+    font-size: 16px;
+  }
+
+  /* Navbar brand */
+  nav.navbar a.navbar-brand {
+    width: auto; /* Ensure the logo auto-scales in smaller viewports */
+  }
+
+  /* Skills / Projects / Contact headings */
+  .skill h2,
+  .project h2,
+  .contact h2 {
+    font-size: 32px; /* Scale down main headings */
+  }
+
+  /* Project section */
+  .project p {
+    width: 90%;  /* Use more of the mobile viewport width */
+    margin: 14px auto 30px auto;
+    font-size: 16px;
+  }
+
+  /* Pills: stack them vertically on small screens */
+  .project .nav.nav-pills {
+    width: 90%; /* narrower so it doesn't overflow */
+    flex-direction: column;
+  }
+
+  .project .nav.nav-pills .nav-item {
+    width: 100%; /* each pill is full-width */
+    margin-bottom: 8px;
+  }
+
+  /* Contact form spacing */
+  .contact {
+    padding: 40px 0 100px 0; /* reduce overall padding */
+  }
+  .contact form input,
+  .contact form textarea {
+    font-size: 16px;
+  }
+
+  /* Footer newsletter */
+  .newsletter-bx {
+    padding: 50px 30px; /* less padding on mobile */
+    margin-top: -60px;  /* adjust for your layout */
+  }
+  .newsletter-bx h3 {
+    font-size: 24px;
+  }
+}
