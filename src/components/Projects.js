@@ -67,7 +67,9 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">ChatNCode</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">E-commerce Website</Nav.Link>
+                        <Nav.Link eventKey="third">
+                          E-commerce Website
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -87,7 +89,15 @@ export const Projects = () => {
                           Developed a responsive food delivery app that allows
                           users to browse menus and order food, optimized for
                           mobile and tablet devices using React.js and
-                          TailwindCSS.
+                          TailwindCSS. <br />
+                          Check it out here:{" "}
+                          <a
+                            href="https://quickbitess.netlify.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            quickbitess.netlify.app
+                          </a>
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
@@ -97,8 +107,12 @@ export const Projects = () => {
                           ))}
                         </Row>
                         <p>
-                          Real-Time Messaging: Users can chat and share ideas instantly through real-time communication using WebSocket.<br></br>
-                          AI-Powered Assistance: Integrated AI assistant helps answer coding-related questions and provides solution for coding problems.
+                          Real-Time Messaging: Users can chat and share ideas
+                          instantly through real-time communication using
+                          WebSocket.<br />
+                          AI-Powered Assistance: Integrated AI assistant helps
+                          answer coding-related questions and provides solutions
+                          for coding problems.
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
@@ -109,8 +123,16 @@ export const Projects = () => {
                         </Row>
                         <p>
                           Built a complete e-commerce website with features like
-                          product listings, user login and registration and
-                          shopping cart.
+                          product listings, user login and registration, and a
+                          shopping cart. <br />
+                          Check it out here:{" "}
+                          <a
+                            href="https://e-commerce-fullstack-nine.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            e-commerce-fullstack-nine.vercel.app
+                          </a>
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
