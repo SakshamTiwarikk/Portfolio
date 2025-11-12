@@ -1,57 +1,56 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { createPageUrl } from "@/utils";
-import { ArrowRight } from "lucide-react";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCards";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   const featuredProjects = [
     {
       title: "Lenny - E-commerce Platform",
-      description: "A fully responsive e-commerce site with product listings, advanced filters, and dynamic cart functionality. Built with React and Node.js for smooth user experience across all device sizes.",
+      description:
+        "A fully responsive e-commerce site with product listings, advanced filters, and dynamic cart functionality. Built with React and Node.js for smooth user experience across all device sizes.",
       icon: "🛒",
       category: "Full Stack",
       images: ["placeholder1.jpg", "placeholder2.jpg", "placeholder3.jpg"],
       videoUrl: null,
       role: "Full Stack Developer - Designed and implemented the entire application from scratch, including frontend UI components, backend API architecture, database schema, and deployment pipeline.",
       techDetails: {
-        "Frontend": ["React", "Tailwind CSS", "React Router"],
-        "Backend": ["Node.js", "Express.js", "MongoDB"],
-        "Tools": ["Git", "Postman", "Netlify"]
+        Frontend: ["React", "Tailwind CSS", "React Router"],
+        Backend: ["Node.js", "Express.js", "MongoDB"],
+        Tools: ["Git", "Postman", "Netlify"],
       },
       features: [
         "Dynamic product filtering and search",
         "Real-time shopping cart with persistent state",
         "Responsive design for mobile and desktop",
-        "RESTful API for product management"
+        "RESTful API for product management",
       ],
       liveLink: "https://e-commerce-fullstack-nine.vercel.app/",
     },
     {
       title: "Project Tracker",
-      description: "Single-user project management application helping individuals organize and track tasks effectively. Features task assignment, priority levels, deadlines, and real-time progress tracking.",
+      description:
+        "Single-user project management application helping individuals organize and track tasks effectively. Features task assignment, priority levels, deadlines, and real-time progress tracking.",
       icon: "📊",
       category: "Frontend",
       images: ["placeholder1.jpg", "placeholder2.jpg"],
       videoUrl: null,
       role: "Frontend Developer - Developed the complete frontend architecture, implemented task management features, and created an intuitive UI for project tracking and organization.",
       techDetails: {
-        "Frontend": ["Next.js", "Tailwind CSS", "React Hooks"],
+        Frontend: ["Next.js", "Tailwind CSS", "React Hooks"],
         "State Management": ["React Context API"],
-        "Tools": ["Git", "Vercel"]
+        Tools: ["Git", "Vercel"],
       },
       features: [
         "Task creation and management with priorities",
         "Progress tracking dashboard",
         "Deadline notifications",
-        "Modular task organization"
+        "Modular task organization",
       ],
       liveLink: null,
-      githubLink: null
-    }
+      githubLink: null,
+    },
   ];
 
   return (
@@ -68,7 +67,8 @@ export default function Home() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              Here are some of my recent projects showcasing my skills in full-stack development
+              Here are some of my recent projects showcasing my skills in
+              full-stack development
             </p>
           </div>
 
@@ -76,16 +76,6 @@ export default function Home() {
             {featuredProjects.map((project, index) => (
               <ProjectCard key={index} project={project} featured={true} />
             ))}
-          </div>
-
-          <div className="text-center">
-            <Link
-              to={createPageUrl("Projects")}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl text-white font-medium transition-all border border-slate-700 hover:border-blue-500/50 group"
-            >
-              View All Projects
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
         </div>
       </section>
