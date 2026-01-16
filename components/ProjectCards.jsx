@@ -73,7 +73,7 @@ export default function ProjectCard({ project, featured = false }) {
               // ✅ Normal image carousel for others
               <div className="absolute inset-0">
                 <Image
-                  src="tracker.png"
+                  src="imagep.png"
                   alt={project?.title || "Project Screenshot"}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

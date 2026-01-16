@@ -29,16 +29,16 @@ export default function Home() {
       liveLink: "https://e-commerce-fullstack-nine.vercel.app/",
     },
     {
-      title: "Project Tracker",
+      title: "Sentinel",
       description:
-        "Single-user project management application helping individuals organize and track tasks effectively. Features task assignment, priority levels, deadlines, and real-time progress tracking.",
+        "A fully animated, visually striking website with smooth scroll-triggered animations, a responsive layout, and engaging transitions. It features a dynamic hero section, modular content blocks, sticky navigation, and parallax effects for depth. Built with modern web technologies (likely React + animation libraries), the site delivers a sleek user experience without any backend integration.",
       icon: "📊",
       category: "Frontend",
       images: ["placeholder1.jpg", "placeholder2.jpg"],
       videoUrl: null,
       role: "Frontend Developer - Developed the complete frontend architecture, implemented task management features, and created an intuitive UI for project tracking and organization.",
       techDetails: {
-        Frontend: ["Next.js", "Tailwind CSS", "React Hooks"],
+        Frontend: ["Vite", "Tailwind CSS", "React Hooks"],
         "State Management": ["React Context API"],
         Tools: ["Git", "Vercel"],
       },

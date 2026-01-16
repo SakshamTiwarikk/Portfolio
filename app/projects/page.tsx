@@ -35,14 +35,14 @@ export default function Projects() {
       ],
     },
     {
-      title: "Project Tracker",
+      title: "Sentinel ",
       description:
-        "A powerful single-user project management application designed to help individuals organize and track their tasks effectively.",
+        "A fully animated, visually striking website with smooth scroll-triggered animations, a responsive layout, and engaging transitions. It features a dynamic hero section, modular content blocks, sticky navigation, and parallax effects for depth. Built with modern web technologies (likely React + animation libraries), the site delivers a sleek user experience without any backend integration.",
       icon: "📊",
       category: "Frontend",
       images: ["placeholder1.jpg", "placeholder2.jpg"],
       techDetails: {
-        Frontend: ["Next.js", "React", "Tailwind CSS"],
+        Frontend: ["React","Vite", "Tailwind CSS"],
         "State Management": ["React Context API", "Local Storage"],
         Tools: ["Git", "Vercel", "Figma"],
       },
